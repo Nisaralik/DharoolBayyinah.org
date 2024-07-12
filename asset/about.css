@@ -1,0 +1,1331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F7F7F3;
+}
+
+:root {
+    --teamColor: #0CCC0C;
+    --backgroundColor: #F7F7F7;
+    --headingColor:  #0e512a;
+}
+
+/* Navbar section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 6px 100px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.dowload-btn,
+.demo-btn {
+    margin-top: 8px;
+}
+
+.dowload-btn button {
+    background-color: var(--teamColor);
+    padding: 6px 20px !important;
+    height: 55px;
+    width: 175px;
+    color: #fff;
+    border: 1px solid var(--teamColor);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.dowload-btn button:hover {
+    color: var(--teamColor);
+    background-color: #fff;
+    border: 1px solid var(--teamColor);
+    transform: 0.3s;
+}
+
+.demo-btn button {
+    background-color: #fff;
+    padding: 6px 20px !important;
+    height: 55px;
+    color: var(--teamColor);
+    border: 1px solid var(--teamColor);
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.demo-btn button:hover {
+    color: #fff;
+    background-color: var(--teamColor);
+    border: 1px solid var(--teamColor);
+    transform: 0.3s;
+}
+
+header.sticky {
+    padding: 10px 80px 1px 80px;
+    background: #fff;
+    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+}
+
+header .logo {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.logo img {
+    height: 45px;
+ 
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nav__item a {
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.nav__link {
+    padding: 10px;
+    color: #eeee;
+    font-weight: 600;
+}
+
+.nav__link:hover {
+    color: var(--teamColor);
+}
+
+.header__close,
+.header__toggle {
+    display: none;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: var(--textColor);
+}
+
+.nav__list a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav__list a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--teamColor);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav__list a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* banner section css */
+
+.banner-section {
+    background-image: url('Images/About/About-banner.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+    margin-top: 60px;
+}
+
+.banner-section h1 {
+    color: #fff;
+    font-weight: 600;
+   
+}
+.banner-section p{
+    color: #fff;
+    font-weight: normal;
+    width: 700px;
+}
+/* About-banner section css */
+
+.about-Banner img{
+    width: 100%;
+}
+.banner{
+    margin-top: 100px;
+}
+
+.Des-box{
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    background-color:white;
+    position: relative;
+    bottom: 80px;
+    border: 1.5px solid #0CCC0C;  
+}
+.Des-box h1{
+    font-size: 32px;
+    color: #096907;
+    text-align: center;
+    margin-top: 20px;
+}
+.Des-box p{
+    color: #096907;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+/* history section css */
+.history-section{
+    margin-top: -300px;
+}
+.History-des h1{
+    font-size: 37px;
+    margin-top: 250px;
+}
+.History-des p{
+    text-align: justify;
+}
+/* mission  section css */
+
+
+.mission{
+    width: 100%;
+    height: 590px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.mission img{
+    width: 345px;
+    height: 510px;
+    margin: 30px 30px;
+}
+.mission p{
+    margin: 0px 30px 30px 30px;
+    text-align: justify;
+}
+.mission h1{
+   margin-left: 25px;
+   margin-top: 50px;
+    font-size: 37px;
+} 
+/**Author details**/
+.mission1 img{
+    width: 500px;
+    height: 570px;
+    border-radius: 20px;
+    margin: 20px 20px 20px;
+    
+}
+.mission1{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+ .mission1 h2{
+ font-size: 28px;
+ margin-left: -100px;
+ margin-top: 20px;
+ 
+ }
+ .mission1 h4{
+    margin-left: -100px;
+ }
+ .mission1 p{
+    text-align: justify;
+    margin-left: -100px;
+ }
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 17px;
+    margin-left: -100px;
+    
+}
+.round{
+    width: 40px;
+    height: 40px;
+    background-color: var(--teamColor);
+    border-radius: 50%;
+    column-gap: 20px;
+
+}
+.icons i{
+    margin: 11px 12px;
+    font-size: 18px;
+    color: #fff;
+}
+.icons h4{
+    margin-left: 60px;
+    position: relative;
+    top: -160px;
+   
+} 
+ .card2{
+    background-color: red;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+ }
+.info{
+    margin: 80px 40px;
+}
+.info p{
+    width: 1200px;
+    text-align: justify;
+} 
+/**card details**/
+.head h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.card{
+    
+    border-radius: 50% 50% 0 0;
+    border: none;
+    margin-top: 30px;
+}
+.card-body{
+    width: 397px;
+    height: 460px;
+    background-color: #EFEFC9;
+    border-radius: 50% 50% 0 0;
+}
+.card-body img{
+    width: 360px;
+    height: 405px;
+    margin-top: 40px;
+}
+.teacher-details{
+    width: 397px;
+    height: 122px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: -16px;
+}
+.teacher-details h1{
+    font-size: 25px;
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+.teacher-details h4{
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+.round-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: var(--teamColor);
+    margin-left: 330px;
+    margin-top: -30px;
+}
+.round-icon i{
+    color: #fff;
+    margin: 20px 20px;
+    font-size: 19px;
+}
+
+/**faculties details**/
+.head1 h1{
+    text-align: center;
+    margin-top: 250px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.card1{
+    width: 375px;
+    height: 450px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+.card-body1 img{
+    width: 375px;
+    height: 450px;
+    border-radius: 12px;
+    background-blend-mode: darken;
+   
+   
+
+}
+
+.card-content{
+    margin: -200px 20px;
+    color: #fff;
+}
+.card-content p{
+    text-align: justify;
+}
+
+
+/*footer section css */
+.footer-section {
+    margin-top: 100px;
+    background-image: url('images/home/footer-background.webp');
+    /* background-position: center; */
+    background-size: cover;
+    padding: 80px 0px 20px 0px;
+    background-color: #07081C;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer-section img {
+    height: 48px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+.footer-section h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.footer-section ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section ul li {
+    list-style: none;
+    color: #fff;
+    margin: 13px 0px 0px 0px;
+}
+
+.social-media {
+    display: flex;
+    color: #fff;
+}
+
+.round {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-top:-60px;
+    color: #fff;
+    font-size: 10px;
+}
+
+@media all and (min-width:1300px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F7F7F3;
+}
+
+:root {
+    --teamColor: #0CCC0C;
+    --backgroundColor: #F7F7F7;
+    --headingColor:  #0e512a;
+}
+
+/* Navbar section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 6px 100px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.dowload-btn,
+.demo-btn {
+    margin-top: 8px;
+}
+
+.dowload-btn button {
+    background-color: var(--teamColor);
+    padding: 6px 20px !important;
+    height: 55px;
+    width: 175px;
+    color: #fff;
+    border: 1px solid var(--teamColor);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.dowload-btn button:hover {
+    color: var(--teamColor);
+    background-color: #fff;
+    border: 1px solid var(--teamColor);
+    transform: 0.3s;
+}
+
+.demo-btn button {
+    background-color: #fff;
+    padding: 6px 20px !important;
+    height: 55px;
+    color: var(--teamColor);
+    border: 1px solid var(--teamColor);
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.demo-btn button:hover {
+    color: #fff;
+    background-color: var(--teamColor);
+    border: 1px solid var(--teamColor);
+    transform: 0.3s;
+}
+
+header.sticky {
+    padding: 10px 80px 1px 80px;
+    background: #fff;
+    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+}
+
+header .logo {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.logo img {
+    height: 45px;
+ 
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.nav__item a {
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.nav__link {
+    padding: 10px;
+    color: #eeee;
+    font-weight: 600;
+}
+
+.nav__link:hover {
+    color: var(--teamColor);
+}
+
+.header__close,
+.header__toggle {
+    display: none;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: var(--textColor);
+}
+
+.nav__list a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav__list a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--teamColor);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav__list a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* banner section css */
+
+.banner-section {
+    background-image: url('Images/About/About-banner.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+    margin-top: 60px;
+}
+
+.banner-section h1 {
+    color: #fff;
+    font-weight: 600;
+   
+}
+.banner-section p{
+    color: #fff;
+    font-weight: normal;
+    width: 700px;
+}
+/* About-banner section css */
+
+.about-Banner img{
+    width: 100%;
+}
+.banner{
+    margin-top: 100px;
+}
+
+.Des-box{
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    background-color:white;
+    position: relative;
+    bottom: 80px;
+    border: 1.5px solid #0CCC0C;  
+}
+.Des-box h1{
+    font-size: 32px;
+    color: #096907;
+    text-align: center;
+    margin-top: 20px;
+}
+.Des-box p{
+    color: #096907;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+/* history section css */
+.history-section{
+    margin-top: -300px;
+}
+.History-des h1{
+    font-size: 37px;
+    margin-top: 250px;
+}
+.History-des p{
+    text-align: justify;
+}
+/* mission  section css */
+
+
+.mission{
+    width: 100%;
+    height: 590px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.mission img{
+    width: 345px;
+    height: 510px;
+    margin: 30px 30px;
+}
+.mission p{
+    margin: 0px 30px 30px 30px;
+    text-align: justify;
+}
+.mission h1{
+   margin-left: 25px;
+   margin-top: 50px;
+    font-size: 37px;
+} 
+/**Author details**/
+.mission1 img{
+    width: 500px;
+    height: 570px;
+    border-radius: 20px;
+    margin: 20px 20px 20px;
+    
+}
+.mission1{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+ .mission1 h2{
+ font-size: 28px;
+ margin-left: -100px;
+ margin-top: 20px;
+ 
+ }
+ .mission1 h4{
+    margin-left: -100px;
+ }
+ .mission1 p{
+    text-align: justify;
+    margin-left: -100px;
+    width: 95%;
+ }
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 17px;
+    margin-left: -100px;
+    
+}
+.round{
+    width: 40px;
+    height: 40px;
+    background-color: var(--teamColor);
+    border-radius: 50%;
+    column-gap: 20px;
+
+}
+.icons i{
+    margin: 11px 12px;
+    font-size: 18px;
+    color: #fff;
+}
+.icons h4{
+    margin-left: 60px;
+    position: relative;
+    top: -150px;
+    font-size: 22px;
+   
+} 
+ .card2{
+    background-color: red;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+ }
+
+/**card details**/
+.head h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.card{
+    
+    border-radius: 50% 50% 0 0;
+    border: none;
+    margin-top: 30px;
+}
+.card-body{
+    width: 397px;
+    height: 460px;
+    background-color: #EFEFC9;
+    border-radius: 50% 50% 0 0;
+}
+.card-body img{
+    width: 360px;
+    height: 405px;
+    margin-top: 40px;
+}
+
+.teacher-details{
+    width: 397px;
+    height: 122px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: -16px;
+}
+.teacher-details h1{
+    font-size: 25px;
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+.teacher-details h4{
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+.round-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: var(--teamColor);
+    margin-left: 330px;
+    margin-top: -30px;
+}
+.round-icon i{
+    color: #fff;
+    margin: 20px 20px;
+    font-size: 19px;
+}
+
+/**faculties details**/
+.head1 h1{
+    text-align: center;
+    margin-top: 250px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.card1{
+    width: 375px;
+    height: 450px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+
+.card-content{
+    margin: -200px 20px;
+    color: #fff;
+}
+.card-content p{
+    text-align: justify;
+}
+
+
+/*footer section css */
+.footer-section {
+    margin-top: 100px;
+    background-image: url('images/home/footer-background.webp');
+    /* background-position: center; */
+    background-size: cover;
+    padding: 80px 0px 20px 0px;
+    background-color: #07081C;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer-section img {
+    height: 48px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+.footer-section h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.footer-section ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section ul li {
+    list-style: none;
+    color: #fff;
+    margin: 13px 0px 0px 0px;
+}
+
+.social-media {
+    display: flex;
+    color: #fff;
+}
+
+.round12 {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-top:-60px;
+    color: #fff;
+    font-size: 10px;
+}
+
+}
+
+@media all and (max-width:700px) {
+
+    /* navbar css */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        padding: 8px 20px 8px 20px;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #000000ee;
+        font-size: 26px;
+        position: relative;
+        right: 10px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 34px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+       
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--headingColor);
+        color: #eeee;
+        width: 100%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 0%;
+        z-index: 1000;
+    }
+    .dowload-btn{
+        margin-left: 100px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 22%;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item {
+        margin: 1.5rem 0;
+    }
+
+    header.sticky {
+        padding: 8px 25px 8px 25px;
+        background: #fff;
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+
+    br {
+        display: none !important;
+    }
+
+ /* banner-section css */
+ .banner-section {
+    background-image: url('images/about/About-banner.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 60px;
+}
+
+
+.banner-section h1 {
+    color: #fff;
+    font-weight: 600;
+    text-align: justify;
+    
+   
+}
+.banner-section p{
+    color: #fff;
+    font-weight: normal;
+    width: 700px;
+    width: 90%;
+    text-align: justify;
+}
+
+
+.Des-box{
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    background-color:white;
+    position: relative;
+    bottom: 80px;
+    border: 1.5px solid #0CCC0C;  
+}
+.Des-box h1{
+    font-size: 25px;
+    color: #096907;
+    text-align: center;
+    margin-top: 20px;
+}
+.Des-box p{
+    color: #096907;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+ /* mission section css */
+
+.mission{
+     /* width: 100%; */
+     height: 1500px;
+
+}
+
+
+.mission img{
+    width: 80%;
+    height: auto;
+    margin: 30px 15px;
+}
+.mission h1{
+    margin-top: -20px;
+}
+
+
+ /* author section css */
+.mission1 img{
+    width: 80%;
+    height: auto;
+}
+ 
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 17px;
+    margin-left: 20px;
+   
+}
+.icons h4{
+    margin-left: 40px;
+}
+.mission1 h2{
+    font-size: 20px;
+    margin: 10px 20px;
+}
+.mission1 h4
+{
+    font-size: 18px;
+    margin: 0px 20px;
+}
+.mission1 p{
+    margin: 10px 20px;
+}
+.round{
+    width: 40px;
+    height: 40px;
+    background-color: var(--teamColor);
+    border-radius: 50%;
+    column-gap: 20px;
+   
+
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+  
+    
+}
+.round{
+    width: 40px;
+    height: 40px;
+    background-color: var(--teamColor);
+    border-radius: 50%;
+  
+
+}
+
+.icons i{
+    margin: 11px 12px;
+    font-size: 18px;
+    color: #fff;
+}
+.icons h4{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+   
+
+
+
+
+ /* card section css */
+
+ .card-head{
+    margin-top: 30px;
+ }
+
+ .head h1{
+    margin-top: -30px;
+    font-size: 30px;
+ }
+
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 150px;
+   
+  
+    
+}
+.event-head{
+    margin-top: 200px;
+}
+.card{
+    
+    border-radius: 50% 50% 0 0;
+    border: none;
+    margin-top: 30px;
+    position: relative;
+    
+}
+.card-body{
+    width: 350px;
+    height: 400px;
+    background-color: #EFEFC9;
+    border-radius: 50% 50% 0 0;
+}
+.card-body img{
+    width: 360px;
+    height: 405px;
+    position: relative;
+    top: -60px;
+}
+.teacher-details{
+    width: 350px;
+    height: 122px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: -16px;
+    margin-top: -60px;
+}
+.teacher-details h1{
+    font-size: 22px;
+    position: relative;
+    left: 15px;
+    top: 30px;
+    font-weight: bold;
+}
+.teacher-details h4{
+    font-size: 18px;
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+.round-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: var(--teamColor);
+    margin-left: 280px;
+    margin-top: -30px;
+}
+.round-icon i{
+    color: #fff;
+    margin: 20px 20px;
+    font-size: 19px;
+}
+
+    /* footer-section css */
+
+    .head1 h1{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .card1{
+        position: relative;
+        top: 30px;
+    }
+    /* footer-section css */
+
+    .footer-section {
+        margin-top: 10  0px;
+        background-image: url('image/home/footer-img.webp');
+        background-position: center;
+        background-size: cover;
+        padding: 40px 0px 20px 0px;
+        height: 1000px;
+    }
+
+    .footer-section img {
+        height: 35px;
+        margin-top: 50px;
+    }
+
+    .footer-section h5 {
+        color: #fff;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+
+    .footer-line {
+        height: 0.5px;
+        width: 100%;
+        background-color: #a8a8a8;
+        margin-top: 30px;
+    }
+
+    .footer-nav { 
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .footer-nav p {
+        text-align: center;
+        font-size: 13px;
+        margin-top: -170px;
+        font-weight: lighter;
+        
+    }
+    
+    
+
+
+}
+
