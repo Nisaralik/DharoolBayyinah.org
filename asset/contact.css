@@ -1135,8 +1135,6 @@ h2{
         box-shadow:  1px 2px 3px 1px rgba(13, 13, 13, 0.2);
         margin-top: 30px;
     
-     
-    
     }
         
     .field{
@@ -1148,7 +1146,7 @@ h2{
     }
     input{
         position: absolute;
-        width: 330px;
+        width: 90%;
         height: 38px;
         outline: none;
         font-size: 15px;
@@ -1157,19 +1155,30 @@ h2{
         border-radius: 10px;
         background-color: #F7F7F7;
         top: 35px;
-        left: 10px;
+        left: 15px;
         border: none;
        
         
        
        
     }
+    input:focus + .val,
+input:valid + .val{
+    color: #0CCC0C;
+    height: 50px;
+    line-height: 30px;
+    transform: translate(-15px,-16px) scale(0.88);
+    z-index: 1111;
+    position:relative;
+    left: 15px;
+    top: 20px;
+}
     .val{
         font-size: 16px;
         color: black;
         position: relative;
         left:20px;
-        top: 35px;
+        top: 40px;
         transition: 0,2 ease;
     
     }
@@ -1189,7 +1198,7 @@ h2{
     }
     .group1 input{
         position: absolute;
-        width: 330px;
+        width: 90%;
         height: 90px;
         outline: none;
         font-size: 15px;
@@ -1198,7 +1207,7 @@ h2{
         border-radius: 10px;
         background-color: #F7F7F7;
         top: 35px;
-        left: 10px;
+        left: 15px;
         border: none;
        
     }
@@ -1219,7 +1228,7 @@ h2{
         border-radius: 5px;
         border: none;
         position: relative;
-        left: 10px;
+        left: 20px;
         top: 10px;
     }
     .btn1{
@@ -1241,12 +1250,22 @@ h2{
         margin-left: 10px;
     
     }
+    .mini-icons{
+        margin-left: -5px;
+    }
 
      /*map css */
 
   .container-fluid{
     margin-top: 100px;
   }
+
+.contact-section{
+    margin-top: -50px;
+}
+.row{
+    margin-top: -30px;
+}
 /* footer-section css */
 
 .footer-section {
