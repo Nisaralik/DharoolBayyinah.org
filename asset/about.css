@@ -162,7 +162,7 @@ header.sticky ul li a {
 /* banner section css */
 
 .banner-section {
-    background-image: url('Images/About/About-banner.webp');
+    background-image: url('images/about/About-banner.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -245,7 +245,7 @@ header.sticky ul li a {
     text-align: justify;
 }
 .mission h1{
-   margin-left: 25px;
+  
    margin-top: 50px;
     font-size: 37px;
 } 
@@ -267,7 +267,7 @@ header.sticky ul li a {
 }
  .mission1 h2{
  font-size: 28px;
- margin-left: -100px;
+
  margin-top: 20px;
  
  }
@@ -406,8 +406,8 @@ header.sticky ul li a {
     width: 375px;
     height: 450px;
     border-radius: 12px;
-    background-blend-mode: darken;
-   
+    
+    
    
 
 }
@@ -418,6 +418,11 @@ header.sticky ul li a {
 }
 .card-content p{
     text-align: justify;
+    width: 330px;
+    
+}
+.card-content h4{
+ 
 }
 
 
@@ -650,7 +655,7 @@ header.sticky ul li a {
 /* banner section css */
 
 .banner-section {
-    background-image: url('Images/About/About-banner.webp');
+    background-image: url('images/about/About-banner.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -733,7 +738,7 @@ header.sticky ul li a {
     text-align: justify;
 }
 .mission h1{
-   margin-left: 25px;
+   
    margin-top: 50px;
     font-size: 37px;
 } 
