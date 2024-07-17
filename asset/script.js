@@ -14,6 +14,20 @@ closeMenu.addEventListener("click", () => {
     document.body.classList.remove('overflow-hidden');
 });
 
+
+// Carousal section
+$(document).ready(function() {
+    var carousel = $('#carouselExampleCaptions');
+
+    // Reduce interval to 3 seconds after 5 seconds
+    setTimeout(function() {
+        carousel.carousel({
+            interval: 3000
+        });
+    }, 5000);
+  
+});
+
 // const swiperEl = document.querySelector('swiper-container');
 
 // swiperEl.addEventListener('swiper-progress', (event) => {

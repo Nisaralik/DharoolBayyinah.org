@@ -37,14 +37,14 @@ header {
 
 .dowload-btn,
 .demo-btn {
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 .dowload-btn button {
     background-color: var(--teamColor);
     padding: 6px 20px !important;
-    height: 55px;
-    width: 175px;
+    height: 50px;
+    width: 170px;
     color: #fff;
     border: 1px solid var(--teamColor);
     border-radius: 8px;
@@ -90,8 +90,8 @@ header .logo {
 }
 
 .logo img {
-    height: 45px;
- 
+    height: 40px;
+
 }
 
 .nav__list {
@@ -258,6 +258,10 @@ header.sticky ul li a {
     font-weight: bold;
   
 }
+.card-body img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
 .title1 h4{
    
     text-align: center;
@@ -280,6 +284,9 @@ header.sticky ul li a {
     height: 510px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     
+}
+.card-body p{
+ margin-top: 5px;
 }
 
 
@@ -331,7 +338,7 @@ body {
     padding: 80px 0px 20px 0px;
     background-color: #07081C;
     width: 100%;
-    height: 400px;
+    height: 380px;
     overflow: hidden;
 }
 
@@ -384,8 +391,9 @@ body {
     margin-top:-30px;
     color: #fff;
     font-size: 10px;
-    font-weight: lighter;
+    
 }
+
 .row{
     margin-top: 450px;
 }
@@ -497,386 +505,6 @@ body {
 
 }
 
-@media all and (min-width:1300px){
-
-        
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
-    background-color: #F7F7F3;
-   
-}
-
-:root {
-    --teamColor: #0CCC0C;
-    --backgroundColor: #F7F7F7;
-    --headingColor: #0E1F51;
-}
-
-/* Navbar section */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 6px 100px;
-    z-index: 1000;
-    background-color: #fff;
-}
-
-.dowload-btn,
-.demo-btn {
-    margin-top: 8px;
-}
-
-.dowload-btn button {
-    background-color: var(--teamColor);
-    padding: 6px 20px !important;
-    height: 55px;
-    width: 175px;
-    color: #fff;
-    border: 1px solid var(--teamColor);
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.dowload-btn button:hover {
-    color: var(--teamColor);
-    background-color: #fff;
-    border: 1px solid var(--teamColor);
-    transform: 0.3s;
-}
-
-.demo-btn button {
-    background-color: #fff;
-    padding: 6px 20px !important;
-    height: 55px;
-    color: var(--teamColor);
-    border: 1px solid var(--teamColor);
-    border-radius: 40px;
-    transition: 0.3s;
-}
-
-.demo-btn button:hover {
-    color: #fff;
-    background-color: var(--teamColor);
-    border: 1px solid var(--teamColor);
-    transform: 0.3s;
-}
-
-header.sticky {
-    padding: 10px 80px 1px 80px;
-    background: #fff;
-    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
-}
-
-header .logo {
-    position: relative;
-    color: var(--textColor);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.6s;
-}
-
-.logo img {
-    height: 45px;
-}
-
-.nav__list {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav__item {
-    position: relative;
-    list-style: none;
-    margin-top: 15px;
-}
-
-.nav__item a {
-    position: relative;
-    margin: 0 20px;
-    text-decoration: none;
-    color: var(--textColor);
-    font-weight: 500;
-    transition: 0.6s;
-}
-
-.nav__link {
-    padding: 10px;
-    color: #eeee;
-    font-weight: 600;
-}
-
-.nav__link:hover {
-    color: var(--teamColor);
-}
-
-.header__close,
-.header__toggle {
-    display: none;
-}
-
-header.sticky .logo,
-header.sticky ul li a {
-    color: var(--textColor);
-}
-
-.nav__list a {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-.nav__list a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: var(--teamColor);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.nav__list a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-/* banner section css */
-
-section{
-    margin-top: 85px;
-
-   
-}
-.container-fluid img{
-    height: 620px;
-}
-
-.container {
-    position: relative;
-    top: -500px;
-}
-.button{
-    width: 175px;
-    height: 55px;
-    background-color: var(--teamColor);
-    border-radius: 8px;
-    border: none;
-    color: #ffff;
-    margin-top: 30px;
-    font-size: 18px;
-}
-.container h1{
-    color: #ffff;
-    font-size: 50px;
-}
-.container h1 span{
-    color: #0CCC0C;
-}
-.container p{
-    color: #fff;
-    margin-top: 30px;
-    font-size: 18px;
-    text-align: justify;
-}
-.carousel-indicators{
-  margin-bottom: 370px;
-        
-}
-.title img{
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-  margin-top: -300px;
-}
-.about-section img{
-    width: 540px;
-    height: 400px;
-    margin-top: 300px;
-}
-.about-section1{
-    margin-left: 600px;
-    margin-top: -400px;
-}
-.about-section1 img{
-    width: 170px;
-    height: 40px;
-    
-}
-.about-section1 p{
-    color: black;
-    text-align: justify;
-}
-
-
-/* cards section css */
-  
-
-.card-body p{
-    color: black;
-}
-.card-body h3{
-    margin-top: 10px;
-}
-
-.cards{
-    margin-top: -400px;
-}
-.title h4{
-    text-align: center;
-    margin-top: 250px;
-    color: var(--teamColor);
-    font-size: 22px;
-    font-weight: bold;
-  
-}
-.title1 h4{
-   
-    text-align: center;
-    margin-top: 100px;
-    color: var(--teamColor);
-    font-size: 22px;
-    font-weight: bold;
-}
-.title1 h2{
-    text-align: center;
-}
-.title h2{
-    text-align: center;
-   
-}
-.card{
-    border-radius: 20px;
-    border: none;
-    width: 375px;
-    height: 510px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    
-}
-
-
-/* swiper section css */
-body {
-    position: relative;
-    height: 500px;
-   
-  }
-
-
-  
-
-  swiper-container {
-    width: 100%;
-    height: 500px;
-    margin-top: 50px;
-  }
-
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-
-
-   /*footercss */
-   
-   .footer-section {
-    margin-top: 100px;
-    background-image: url('images/home/footer-background.webp');
-    /* background-position: center; */
-    background-size: cover;
-    padding: 80px 0px 20px 0px;
-    background-color: #07081C;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-.footer-section img {
-    height: 40px;
-}
-
-.footer-section p,
-.footer-section a {
-    color: #fff;
-    text-decoration: none;
-    margin-top: 100px;
-    font-size: 15px;
-}
-
-.footer-section h5 {
-    color: #fff;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.footer-section ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-.footer-section ul li {
-    list-style: none;
-    color: #fff;
-    margin: 13px 0px 0px 0px;
-}
-
-.social-media {
-    display: flex;
-    color: #fff;
-}
-
-.round {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    margin-top:-30px;
-    color: #fff;
-    font-size: 10px;
-   
-}
-
-
-}
-
 
 @media all and (max-width:700px) {
 
@@ -963,7 +591,7 @@ body {
 }
 
 .container h1{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 100px;
 }
 .container p{

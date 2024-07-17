@@ -36,14 +36,14 @@ header {
 
 .dowload-btn,
 .demo-btn {
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 .dowload-btn button {
     background-color: var(--teamColor);
     padding: 6px 20px !important;
-    height: 55px;
-    width: 175px;
+    height: 50px;
+    width: 170px;
     color: #fff;
     border: 1px solid var(--teamColor);
     border-radius: 8px;
@@ -89,7 +89,7 @@ header .logo {
 }
 
 .logo img {
-    height: 45px;
+    height: 40px;
 }
 
 .nav__list {
@@ -180,6 +180,28 @@ header.sticky ul li a {
     color: #fff;
     font-weight: normal;
     width: 700px;
+}
+.shapes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: var(--teamColor);
+    height: 42px;
+    width: 31px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position: relative;
+    top: 30px;
+    overflow: hidden;
+
+}
+.row h3{
+
+    margin-left: 40px;
+    margin-top: -5px;
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+
 }
 /* events section css */
 
@@ -458,14 +480,14 @@ header {
 
 .dowload-btn,
 .demo-btn {
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 .dowload-btn button {
     background-color: var(--teamColor);
     padding: 6px 20px !important;
-    height: 55px;
-    width: 175px;
+    height: 50px;
+    width: 170px;
     color: #fff;
     border: 1px solid var(--teamColor);
     border-radius: 8px;
@@ -511,7 +533,7 @@ header .logo {
 }
 
 .logo img {
-    height: 45px;
+    height: 40px;
 }
 
 .nav__list {
@@ -784,12 +806,12 @@ header.sticky ul li a {
     padding: 80px 0px 20px 0px;
     background-color: #07081C;
     width: 100%;
-    height: 400px;
+    height: 380px;
     overflow: hidden;
 }
 
 .footer-section img {
-    height: 48px;
+    height: 40px;
 }
 
 .footer-section p,
@@ -943,7 +965,7 @@ header.sticky ul li a {
     top: 100px;
 }
 .Pro-Det h1{
-    font-size: 25px;
+    font-size: 22px;
 }
 .card2 img{
     width: 100%;
