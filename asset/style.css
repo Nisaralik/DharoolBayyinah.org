@@ -236,6 +236,12 @@ header.sticky ul li a {
 }
 
 /* cards section css */
+
+
+.card-body{
+    width: 350px;
+}
+  
   
 .cards-section{
     margin-top: -50px;
@@ -280,7 +286,7 @@ header.sticky ul li a {
 .card{
     border-radius: 20px;
     border: none;
-    width: 375px;
+    width: 350px;
     height: 510px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     
@@ -743,6 +749,9 @@ header.sticky ul li a {
 }
 
 /* cards section css */
+.card-body{
+    width: 370px;
+}
   
 .cards-section{
     margin-top: -50px;
