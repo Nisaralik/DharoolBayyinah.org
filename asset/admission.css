@@ -1796,7 +1796,7 @@ header.sticky ul li a {
         background-position: center;
         background-size: cover;
         padding: 40px 0px 20px 0px;
-        height: 1000px;
+        height: 970px;
         overflow: hidden;
     }
     
@@ -1827,9 +1827,9 @@ header.sticky ul li a {
     
     .footer-nav p {
         text-align: center;
-        font-size: 13px;
-        margin-top: -10px;
-        font-weight: lighter;
+        font-size: 12px;
+        margin-top: 20px;
+        
     }
     
 }

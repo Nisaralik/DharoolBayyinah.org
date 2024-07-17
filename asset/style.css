@@ -1131,7 +1131,7 @@ background-image: url('images/home/footer-background.webp');
 background-position: center;
 background-size: cover;
 padding: 40px 0px 20px 0px;
-height: 1050px;
+height: 1000px;
 }
 
 .footer-section img {
@@ -1161,7 +1161,7 @@ margin-top: 30px;
 
 .footer-nav p {
 text-align: center;
-font-size: 13px;
+font-size: 12px;
 }
 
 

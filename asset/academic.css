@@ -1182,11 +1182,11 @@ header.sticky ul li a {
 
 .footer-nav p {
     text-align: center;
-    font-size: 13px;
-    margin-top: -13px;
+    font-size: 12px;
+    margin-top: 10px;
     position: relative;
     top: 15px;
-    font-weight: lighter;
+   
 }
 
 }

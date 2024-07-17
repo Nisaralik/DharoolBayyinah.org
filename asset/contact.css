@@ -1851,10 +1851,10 @@ input:valid + .val{
 
 .footer-nav p {
     text-align: center;
-    font-size: 13px;
-    margin-top: -20px;
+    font-size: 12px;
+    margin-top: 20px;
     margin-left: 40px;
-    font-weight: lighter;
+   
     
 }
 
