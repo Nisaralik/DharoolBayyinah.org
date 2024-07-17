@@ -926,8 +926,9 @@ header.sticky ul li a {
         border: none;
         margin-top: 100px;
         position: relative;
-        left: 650px;
-      
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
       
     }
