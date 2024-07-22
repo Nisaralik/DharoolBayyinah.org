@@ -28,6 +28,33 @@ $(document).ready(function() {
   
 });
 
+
+// const swiperEl = document.querySelector('swiper-container');
+
+// // swiper parameters
+// const swiperParams = {
+//   slidesPerView: 1,
+//   breakpoints: {
+//     700: {
+//       slidesPerView: 1,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//     },
+//   },
+//   on: {
+//     init() {
+//       // ...
+//     },
+//   },
+// };
+
+// // now we need to assign all parameters to Swiper element
+// Object.assign(swiperEl, swiperParams);
+
+// // and now initialize it
+// swiperEl.initialize();
+
 // const swiperEl = document.querySelector('swiper-container');
 
 // swiperEl.addEventListener('swiper-progress', (event) => {
@@ -37,3 +64,4 @@ $(document).ready(function() {
 // swiperEl.addEventListener('swiper-slidechange', (event) => {
 //   console.log('slide changed');
 // });
+

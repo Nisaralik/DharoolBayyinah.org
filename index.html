@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="asset/style.css" />
       <!-- slider -->
       <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      
+
+
 </head>
 
 <body>
@@ -90,7 +93,7 @@
    
   <!-- About section -->
 
- <section class="about-section2">
+ <section class="about-section2"  data-aos="fade-down">
     <div class="container">
 <div class="row">
     <div class="col-lg-6">
@@ -109,7 +112,7 @@
    <!-- service section -->
 
 
-  <section class="cards-section">
+  <section class="cards-section"  data-aos="fade-down">
      
    <div class="container">
     <div class="title">
@@ -176,17 +179,36 @@
     </div>
 </div>
   </section>
-    <section class="swiper-section">
+    <section class="swiper-section"  data-aos="fade-down">
     <div class="title1">
         <h4>UPCOMING EVENTS</h4>
         <h2>LOREM IPSUM DOLOR SIT, AMET CONSECTETUR</h2>
     </div>
 </section>
-  
+
+<section class="flex-container" >
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="asset/images/home/slide-image1.webp" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image2.webp" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image3.png" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image1.webp" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image2.webp" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image3.png" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image1.webp" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image2.webp" alt=""></div>
+          <div class="swiper-slide"><img src="asset/images/home/slide-image3.png" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+</section>
+ 
        
- <section>
-    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
-    slides-per-view="3">
+ <!-- <section  data-aos="fade-down">
+    <swiper-container id="mySwiper1" class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+    slides-per-view="3" laoding="lazy">
+   
     <swiper-slide><img src="asset/images/home/slide-image1.webp" alt=""></swiper-slide>
     <swiper-slide><img src="asset/images/home/slide-image2.webp" alt=""></swiper-slide>
     <swiper-slide><img src="asset/images/home/slide-image3.png" alt=""></swiper-slide>
@@ -197,7 +219,7 @@
     <swiper-slide><img src="asset/images/home/slide-image2.webp" alt=""></swiper-slide>
     <swiper-slide><img src="asset/images/home/slide-image3.png" alt=""></swiper-slide>
   </swiper-container> 
- </section>
+ </section>  -->
 <!-- <swiper-container events-prefix="swiper-">
     <swiper-slide>Slide 1</swiper-slide>
     <swiper-slide>Slide 2</swiper-slide>
@@ -293,6 +315,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- swiper link script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- bootstrap link script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -307,6 +330,33 @@
             duration: 1200,
             once: true,
         });
+
+
+        
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+       
+      },
+    });
+  
     </script>
 </body>
 
