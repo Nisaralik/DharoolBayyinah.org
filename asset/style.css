@@ -695,12 +695,20 @@ header.sticky ul li a {
 }
 .card-body img{
     width: 93%;
+    position: relative;
+    left: 10px;
    
 }
 .card-body p{
     width: 93%;
+    position: relative;
+    left: 10px;
    
     
+}
+.card-body h3{
+    position: relative;
+    left: 10px;
 }
 /* slider-section css */
 
