@@ -692,15 +692,17 @@ header.sticky ul li a {
  .card-body p{
     color: black;
     position: relative;
-    /* bottom: 8px; */
+    bottom: 8px;
     
  }
  .card-body img{
     position: relative;
-    width: 100%
+    width: 100%;
+    padding: 1px;
+    
+    
 
-
- };
+ }
 
 /* slider-section css */
 
