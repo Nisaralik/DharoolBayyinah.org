@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -7,15 +7,15 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Onest", sans-serif;
     scroll-behavior: smooth;
     background-color: #F7F7F3;
 }
 
 :root {
-    --teamColor: #0CCC0C;
+    --teamColor: #3798D4;
     --backgroundColor: #F7F7F7;
-    --headingColor:  #0e512a;
+    --headingColor:  #033d51;
 }
 /* Navbar section */
 
@@ -88,7 +88,7 @@ header .logo {
 }
 
 .logo img {
-    height: 40px;
+    height:55px;
  
 }
 
@@ -180,6 +180,7 @@ header.sticky ul li a {
     color: #fff;
     font-weight: normal;
     width: 700px;
+    font-weight: 200;
 }
 .shapes{
     display: flex;
@@ -220,18 +221,19 @@ header.sticky ul li a {
     background-color:white;
     position: relative;
     bottom: 80px;
-    border: 1.5px solid #0CCC0C;  
+    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50); 
 }
 .Des-box h1{
     font-size: 32px;
-    color: #096907;
+    color:#3798D4;
     text-align: center;
     margin-top: 20px;
 }
 .Des-box p{
-    color: #096907;
+    color: #3798D4;
     text-align: center;
     margin-top: 20px;
+    opacity: 60%;
    
 }
 /* history section css */
@@ -244,6 +246,7 @@ header.sticky ul li a {
 }
 .History-des p{
     text-align: justify;
+    opacity: 60%;
 }
 /* mission  section css */
 
@@ -265,6 +268,7 @@ header.sticky ul li a {
 .mission p{
     width: 95%;
     text-align: justify;
+    opacity: 60%;
 }
 .mission h1{
   
@@ -298,6 +302,7 @@ header.sticky ul li a {
  .mission1 p{
     text-align: justify;
     width: 90%;
+    opacity: 60%;
  }
 .icons{
     display: flex;
@@ -312,7 +317,7 @@ header.sticky ul li a {
     height: 40px;
     background-color: var(--teamColor);
     border-radius: 50%;
-    column-gap: 20px;
+    column-gap: 15px;
 
 }
 .icons i{
@@ -323,7 +328,7 @@ header.sticky ul li a {
 .icons h4{
     margin-left: 60px;
     position: relative;
-    top: -160px;
+    top: -175px;
    
 } 
  .card2{
@@ -428,7 +433,7 @@ header.sticky ul li a {
     height: 450px;
     border-radius: 12px;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(40%);
 
    
 }
@@ -441,6 +446,7 @@ header.sticky ul li a {
 .card-content p{
     text-align: justify;
     width: 330px;
+    opacity: 80%;
   
     
 }
@@ -466,7 +472,9 @@ header.sticky ul li a {
 }
 
 .footer-section img {
-    height: 40px;
+    height: 55px;
+    position: relative;
+    top: 20px;
 }
 
 .footer-section p,
@@ -475,6 +483,10 @@ header.sticky ul li a {
     text-decoration: none;
     margin-top: 100px;
     font-size: 15px;
+}
+.footer-section p{
+    position: relative;
+    top: 20px;
 }
 
 .footer-section h5 {
@@ -511,7 +523,7 @@ header.sticky ul li a {
 .footer-nav {
     display: flex;
     justify-content: center;
-    margin-top:-60px;
+    margin-top:-100px;
     color: #fff;
     font-size: 10px;
 }
@@ -531,7 +543,7 @@ header.sticky ul li a {
     }
     
     :root {
-        --teamColor: #0CCC0C;
+        --teamColor: #3798D4;
         --backgroundColor: #F7F7F7;
         --headingColor:  #0e512a;
     }
@@ -606,7 +618,7 @@ header.sticky ul li a {
     }
     
     .logo img {
-        height: 40px;
+        height: 55px;
      
     }
     
@@ -738,16 +750,16 @@ header.sticky ul li a {
         background-color:white;
         position: relative;
         bottom: 80px;
-        border: 1.5px solid #0CCC0C;  
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50); 
     }
     .Des-box h1{
         font-size: 32px;
-        color: #096907;
+        color: #3798D4;
         text-align: center;
         margin-top: 20px;
     }
     .Des-box p{
-        color: #096907;
+        color: #3798D4;
         text-align: center;
         margin-top: 20px;
        
@@ -810,9 +822,7 @@ header.sticky ul li a {
      margin-top: 30px;
      
      }
-     .mission1 h4{
-       
-     }
+    
      .mission1 p{
         text-align: justify;
         width: 90%;
@@ -984,7 +994,9 @@ header.sticky ul li a {
     }
     
     .footer-section img {
-        height: 40px;
+        height: 55px;
+        position: relative;
+        top: 20px;
     }
     
     .footer-section p,
@@ -994,7 +1006,10 @@ header.sticky ul li a {
         margin-top: 100px;
         font-size: 15px;
     }
-    
+    .footer-section p{
+        position: relative;
+        top: 20px;
+    }
     .footer-section h5 {
         color: #fff;
         font-weight: 600;
@@ -1029,7 +1044,7 @@ header.sticky ul li a {
     .footer-nav {
         display: flex;
         justify-content: center;
-        margin-top:-60px;
+        margin-top:-100px;
         color: #fff;
         font-size: 10px;
     }
@@ -1159,16 +1174,16 @@ header.sticky ul li a {
     background-color:white;
     position: relative;
     bottom: 80px;
-    border: 1.5px solid #0CCC0C;  
+    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);  
 }
 .Des-box h1{
     font-size: 25px;
-    color: #096907;
+    color:var(--teamColor);
     text-align: center;
     margin-top: 20px;
 }
 .Des-box p{
-    color: #096907;
+    color:var(--teamColor);
     text-align: center;
     margin-top: 8px;
    
@@ -1178,7 +1193,9 @@ header.sticky ul li a {
 
 .mission{
      /* width: 100%; */
-     height: 1350px;
+     height: 1300px;
+     position: relative;
+     bottom: 50px;
 
 }
 
@@ -1189,17 +1206,28 @@ header.sticky ul li a {
     margin: 30px 15px;
 }
 .mission h1{
-     margin: 10px ;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
 }
 .mission p{
-    margin: 15px;
+  margin: 16px 10px;
+   position: relative;
+   bottom: 65px;
 }
 
 
  /* author section css */
+
+ .author-section{
+   position: relative;
+   bottom: 80px;
+   height: 1000px;
+ }
 .mission1 img{
-    width: 80%;
+    width: 88%;
     height: auto;
+    
 }
 
 
@@ -1209,10 +1237,14 @@ header.sticky ul li a {
     flex-direction: column;
     gap: 17px;
     margin-left: 20px;
+    position: relative;
+    top: 20px;
    
 }
 .icons h4{
-    margin-left: 40px;
+   
+   position: relative;
+   top: -155px;
 }
 .mission1 h2{
     font-size: 20px;
@@ -1231,7 +1263,7 @@ header.sticky ul li a {
     height: 40px;
     background-color: var(--teamColor);
     border-radius: 50%;
-    column-gap: 20px;
+    column-gap: 25px;
    
 
 }
@@ -1270,11 +1302,11 @@ header.sticky ul li a {
  /* card section css */
 
  .card-head{
-    margin-top: 30px;
+    margin-top: 50px;
  }
 
  .head h1{
-    margin-top: 50px;
+    margin-top: 80px;
     font-size: 30px;
  }
  .techers-details-section{
@@ -1352,14 +1384,16 @@ header.sticky ul li a {
     }
     
     .head1 h1{
-        margin-top: 100px;
+       position: relative;
+       top: -80px;
         font-size: 30px;
     }
     .card1{
         position: relative;
-        top: 30px;
+        top: -30px;
+        
     }
-    
+  
     /* footer-section css */
 
     .footer-section {
@@ -1368,12 +1402,12 @@ header.sticky ul li a {
         background-position: center;
         background-size: cover;
         padding: 40px 0px 20px 0px;
-        height: 1000px;
+        height: 980px;
     }
 
     .footer-section img {
         height: 35px;
-        margin-top: 50px;
+      
     }
 
     .footer-section h5 {

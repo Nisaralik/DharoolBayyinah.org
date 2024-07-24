@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -7,15 +7,15 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Onest", sans-serif;
     scroll-behavior: smooth;
     background-color: #F7F7F3;
 }
 
 :root {
-    --teamColor: #0CCC0C;
+    --teamColor: #3798D4;
     --backgroundColor: #F7F7F7;
-    --headingColor:  #0e512a;
+    --headingColor:  #033d51;
 }
 
 /* Navbar section */
@@ -89,7 +89,7 @@ header .logo {
 }
 
 .logo img {
-    height: 40px;
+    height: 55px;
 }
 
 .nav__list {
@@ -180,6 +180,7 @@ header.sticky ul li a {
     color: #fff;
     font-weight: normal;
     width: 700px;
+    font-weight: 200;
 }
 .shapes{
     display: flex;
@@ -255,7 +256,7 @@ header.sticky ul li a {
 }
 .dash{
     width: 100%;
-    background-color: #0CCC0C;
+    background-color: #3798D4;
     border: 0.5px dashed;
     position: relative;
     top: 250px;
@@ -311,6 +312,7 @@ header.sticky ul li a {
  .Dep-Head p{
     margin-top: 10px;
     text-align: center;
+    opacity: 60%;
  }
 .full-details{
     margin-top: 200px;
@@ -374,7 +376,8 @@ header.sticky ul li a {
     position: relative;
     left: 20px;
     top: 15px;
-    
+    opacity: 60%;
+  
 }
  /*footercss */
    
@@ -391,7 +394,9 @@ header.sticky ul li a {
 }
 
 .footer-section img {
-    height: 48px;
+    height: 55px;
+    position: relative;
+    top: 20px;
 }
 
 .footer-section p,
@@ -401,6 +406,11 @@ header.sticky ul li a {
     margin-top: 100px;
     font-size: 15px;
 }
+.footer-section p{
+    position: relative;
+    top: 20px;
+}
+
 
 .footer-section h5 {
     color: #fff;
@@ -436,7 +446,7 @@ header.sticky ul li a {
 .footer-nav {
     display: flex;
     justify-content: center;
-    margin-top:-40px;
+    margin-top:-60px;
     color: #fff;
     font-size: 10px;
 }
@@ -455,7 +465,7 @@ header.sticky ul li a {
     }
     
     :root {
-        --teamColor: #0CCC0C;
+        --teamColor: #3798D4;
         --backgroundColor: #F7F7F7;
         --headingColor:  #0e512a;
     }
@@ -531,7 +541,7 @@ header.sticky ul li a {
     }
     
     .logo img {
-        height: 40px;
+        height: 55px;
     }
     
     .nav__list {
@@ -697,7 +707,7 @@ header.sticky ul li a {
     }
     .dash{
         width: 100%;
-        background-color: #0CCC0C;
+        background-color: #3798D4;
         border: 0.5px dashed;
         position: relative;
         top: 250px;
@@ -833,7 +843,9 @@ header.sticky ul li a {
     }
     
     .footer-section img {
-        height: 48px;
+        height: 55px;
+        position: relative;
+        top: 20px;
     }
     
     .footer-section p,
@@ -842,6 +854,10 @@ header.sticky ul li a {
         text-decoration: none;
         margin-top: 100px;
         font-size: 15px;
+    }
+    .footer-section p{
+        position: relative;
+        top: 20px;
     }
     
     .footer-section h5 {
@@ -878,7 +894,7 @@ header.sticky ul li a {
     .footer-nav {
         display: flex;
         justify-content: center;
-        margin-top:-40px;
+        margin-top:-60px;
         color: #fff;
         font-size: 10px;
     }
@@ -1152,12 +1168,12 @@ header.sticky ul li a {
     background-position: center;
     background-size: cover;
     padding: 40px 0px 20px 0px;
-    height: 1000px;
+    height: 980px;
 }
 
 .footer-section img {
     height: 35px;
-    margin-top: 50px;
+  
 }
 
 .footer-section h5 {

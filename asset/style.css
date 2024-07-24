@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -7,16 +7,16 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Onest", sans-serif;
     scroll-behavior: smooth;
     background-color: #F7F7F3;
    
 }
 
 :root {
-    --teamColor: #0CCC0C;
+    --teamColor: #3798D4;
     --backgroundColor: #F7F7F7;
-    --headingColor: #0e512a;
+    --headingColor: #033d51;
 }
 
 /* Navbar section */
@@ -90,7 +90,7 @@ header .logo {
 }
 
 .logo img {
-    height: 40px;
+    height: 55px;
 
 }
 
@@ -167,7 +167,7 @@ header.sticky ul li a {
 }
 .container-fluid img{
     height: 100%;
-    width: 100%;
+    width: 100%!important;
 }
 
 .container {
@@ -189,13 +189,15 @@ header.sticky ul li a {
     font-size: 50px;
 }
 .container h1 span{
-    color: #0CCC0C;
+    color:var(--teamColor);
 }
 .container p{
     color: #fff;
     margin-top: 30px;
     font-size: 18px;
     text-align: justify;
+    font-weight: 200;
+   
 }
 .carousel-indicators{
   margin-bottom: 370px;
@@ -208,7 +210,7 @@ header.sticky ul li a {
    width: 100%;
    height: 100%;
    overflow: hidden;
-  margin-top: -300px;
+   margin-top: -300px;
 }
 /* .about-section img{
     width: 540px;
@@ -233,6 +235,7 @@ header.sticky ul li a {
 }
 .col-lg-6 p{
     color: black !important;
+    opacity: 60%;
 }
 
 /* cards section css */
@@ -248,6 +251,7 @@ header.sticky ul li a {
 }
 .card-body p{
     color: black;
+    opacity: 60%;
 }
 .card-body h3{
     margin-top: 10px;
@@ -339,17 +343,22 @@ header.sticky ul li a {
 }
 
 .footer-section img {
-    height: 40px;
+    height: 55px;
+    position: relative;
+    top: 20px;
 }
 
 .footer-section p,
 .footer-section a {
     color: #fff;
     text-decoration: none;
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 15px;
 }
-
+.footer-section p{
+    position: relative;
+    top: 20px;
+}
 .footer-section h5 {
     color: #fff;
     font-weight: 600;
@@ -384,7 +393,7 @@ header.sticky ul li a {
 .footer-nav {
     display: flex;
     justify-content: center;
-    margin-top:-30px;
+    margin-top:-50px;
     color: #fff;
     font-size: 10px;
     
@@ -678,9 +687,13 @@ header.sticky ul li a {
     width: 100%;
     height: 100%;
     margin-top: -30px;
+   
  }
  .card-body p{
     color: black;
+    position: relative;
+    bottom: 8px;
+    
  }
 
 /* slider-section css */
@@ -717,7 +730,7 @@ header.sticky ul li a {
     display: block;
     width: 100%;
     height: 400px;
-    padding: 10px;
+    padding: 16px;
     object-fit: cover;
 
 
@@ -765,7 +778,7 @@ margin-top: 30px;
 
 display: flex;
 justify-content: center;
-margin-top: 30px;
+margin-top: 10px;
 }
 
 .footer-nav p {

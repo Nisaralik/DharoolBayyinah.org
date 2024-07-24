@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -7,15 +7,15 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Onest", sans-serif;
     scroll-behavior: smooth;
     background-color: #F7F7F3;
 }
 
 :root {
-    --teamColor: #0CCC0C;
+    --teamColor: #3798D4;
     --backgroundColor: #F7F7F7;
-    --headingColor:  #0e512a;
+    --headingColor:  #033d51;
 }
 
 /* Navbar section */
@@ -89,7 +89,7 @@ header .logo {
 }
 
 .logo img {
-    height: 40px;
+    height: 55px;
 }
 
 .nav__list {
@@ -182,6 +182,7 @@ header.sticky ul li a {
     color: #fff;
     font-weight: normal;
     width: 700px;
+    font-weight: 200;
 }
 .shapes{
     display: flex;
@@ -216,6 +217,7 @@ header.sticky ul li a {
 }
 .Head p{
     text-align: center;
+   
 }
 
 .process{
@@ -248,6 +250,7 @@ header.sticky ul li a {
     position: relative;
     text-align: center;
     top: 80px;
+    opacity: 60%;
   
 }
 
@@ -429,7 +432,7 @@ header.sticky ul li a {
 .big-btn{ 
         width: 160px;
         height: 38px;
-        background-color: #0CCC0C;
+        background-color: #3798D4;
         border-radius: 12px;
         color: white;
         font-size: 12px;
@@ -444,7 +447,7 @@ header.sticky ul li a {
 /*footer section css */
 
     .footer-section {
-        margin-top: -500px;
+        margin-top: -400px;
         background-image: url('images/home/footer-background.webp');
         /* background-position: center; */
         background-size: cover;
@@ -456,7 +459,9 @@ header.sticky ul li a {
     }
     
     .footer-section img {
-        height: 48px;
+        height: 55px;
+        position: relative;
+        top: 20px;
     }
     
     .footer-section p,
@@ -465,6 +470,10 @@ header.sticky ul li a {
         text-decoration: none;
         margin-top: 100px;
         font-size: 15px;
+    }
+    .footer-section p{
+        position: relative;
+        top: 20px;
     }
     
     .footer-section h5 {
@@ -501,518 +510,11 @@ header.sticky ul li a {
     .footer-nav {
         display: flex;
         justify-content: center;
-        margin-top:-60px;
+        margin-top:-80px;
         color: #fff;
         font-size: 10px;
     }
 
-    
-@media screen and (min-width:1300px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: "Inter", sans-serif;
-        scroll-behavior: smooth;
-        background-color: #F7F7F3;
-    }
-    
-    :root {
-        --teamColor: #0CCC0C;
-        --backgroundColor: #F7F7F7;
-        --headingColor:  #0e512a;
-    }
-    
-    /* Navbar section */
-    
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.6s;
-        padding: 6px 100px;
-        z-index: 1000;
-        background-color: #fff;
-    }
-    
-    .dowload-btn,
-    .demo-btn {
-        margin-top: 12px;
-    }
-    
-    .dowload-btn button {
-        background-color: var(--teamColor);
-        padding: 6px 20px !important;
-        height: 50px;
-        width: 170px;
-        color: #fff;
-        border: 1px solid var(--teamColor);
-        border-radius: 8px;
-        transition: 0.3s;
-    }
-    
-    .dowload-btn button:hover {
-        color: var(--teamColor);
-        background-color: #fff;
-        border: 1px solid var(--teamColor);
-        transform: 0.3s;
-    }
-    
-    .demo-btn button {
-        background-color: #fff;
-        padding: 6px 20px !important;
-        height: 55px;
-        color: var(--teamColor);
-        border: 1px solid var(--teamColor);
-        border-radius: 40px;
-        transition: 0.3s;
-    }
-    
-    .demo-btn button:hover {
-        color: #fff;
-        background-color: var(--teamColor);
-        border: 1px solid var(--teamColor);
-        transform: 0.3s;
-    }
-    
-    header.sticky {
-        padding: 10px 80px 1px 80px;
-        background: #fff;
-        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
-    }
-    
-    header .logo {
-        position: relative;
-        color: var(--textColor);
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.6s;
-    }
-    
-    .logo img {
-        height: 40px;
-    }
-    
-    .nav__list {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .nav__item {
-        position: relative;
-        list-style: none;
-        margin-top: 15px;
-    }
-    
-    .nav__item a {
-        position: relative;
-        margin: 0 20px;
-        text-decoration: none;
-        color: var(--textColor);
-        font-weight: 500;
-        transition: 0.6s;
-    }
-    
-    .nav__link {
-        padding: 10px;
-        color: #eeee;
-        font-weight: 600;
-    }
-    
-    .nav__link:hover {
-        color: var(--teamColor);
-    }
-    
-    .header__close,
-    .header__toggle {
-        display: none;
-    }
-    
-    header.sticky .logo,
-    header.sticky ul li a {
-        color: var(--textColor);
-    }
-    
-    .nav__list a {
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-    }
-    
-    .nav__list a:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: var(--teamColor);
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-    
-    .nav__list a:hover:after {
-        width: 100%;
-        left: 0;
-    }
-    
-    
-    
-    /* banner section css */
-    
-    .banner-section {
-        background-image: url('images/admission/Admission-banner.webp');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 540px;
-        margin-top: 60px;
-    }
-    
-    .banner-section h1 {
-        color: #fff;
-        font-weight: 600;
-       
-    }
-    .banner-section p{
-        color: #fff;
-        font-weight: normal;
-        width: 700px;
-    }
-    .shapes{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        background: var(--teamColor);
-        height: 42px;
-        width: 31px;
-        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        position: relative;
-        top: 30px;
-        overflow: hidden;
-    
-    }
-    .row h3{
-    
-        margin-left: 40px;
-        margin-top: -5px;
-        position: relative;
-        color: #fff;
-        font-size: 30px;
-    
-    }
-    /* Process section css */
-    
-    .Head h1{
-        font-size: 35px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 100px;
-    
-    }
-    .Head p{
-        text-align: center;
-    }
-    
-    .process{
-        margin-top: -100px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 60px;
-    }
-    
-    .process-sec{
-        width: 360px;
-        height: 305px;
-        background-color: white;
-        position: relative;
-        top: 150px;
-        border-radius: 15px;
-        border: 1px 55% solid black;
-        box-shadow:  1px 2px 3px 1px rgba(129, 121, 126, 0.2);
-    
-    }
-    .process-sec h4{
-        font-size: 22px;
-        position: relative;
-        font-weight: bold;
-        text-align: center;
-        top: 70px;
-    }
-    .process-sec p{
-        position: relative;
-        text-align: center;
-        top: 80px;
-      
-    }
-    
-    /*Tution section css */
-    
-    .bacground img{
-        width: 100%;
-        height: 1000px;
-        position: relative;
-        top: 200px;
-    }
-    
-    .Details11 h1{
-        position: relative;
-        color: black;
-        font-size: 35px;
-        font-weight: bold;
-        text-align: center;
-       bottom: 700px;
-    }
-    .Details11 p{
-        position: relative;
-        color: black;
-        text-align: center;
-        bottom: 700px;
-    }
-    
-    
-        
-    .card12{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: row;
-        gap: 35px;
-        position: relative;
-        top: -70px;
-    }
-    
-    .card-body img{
-        width: 370px;
-        height: 290px;
-        position: relative;
-        top: -600px;
-        border-radius: 20px 20px 0 0;
-        display: flex;  
-        flex-direction: row;
-        gap: 34px; 
-    }
-    .cards-sections{
-        margin-top: -80px;
-    }
-    .image-des{
-    
-        width: 370px;
-        height: 290px;
-        background-color: #fff;
-        position: relative;
-        top: -630px;
-        border-radius: 0 0 20px 20px;
-        box-shadow:  1px 1px 1px 1px rgba(129, 121, 126, 0.2);
-    }
-    .image-des img{
-        width: 112px;
-        height: 120px;
-        position: relative;
-        top: 50px;
-       
-    }
-    .image-des h1{
-        font-size: 24px;
-        font-weight: bold;
-        position: relative;
-        top: -100px;
-        left: 20px;
-    }
-    .dashline{
-         display: flex;
-        flex-wrap: wrap;
-        width: 320px;
-        height: 0.5px;
-        position: relative;
-        left: 25px;
-        top: -90px;
-        border: 1px dashed  #9B9B9B; 
-      
-    }
-    .session{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 60px;
-    
-    }
-    
-    .align h3{
-        color: #0CCC0C;
-        font-size: 15px;
-        font-weight: 900;
-        position: relative;
-        text-align: center;
-        left: 40px;
-        top: -70px;
-       
-    }
-    .align span{
-        color: black;
-    }
-    .dashline1{
-        display: flex;
-        flex-wrap: wrap;
-        width: 320px;
-        height: 0.5px;
-        position: relative;
-        left: 25px;
-        top: -110px;
-        border: 1px dashed  #9B9B9B;
-    }
-    .admission-det{
-        width: 225px;
-        height: 56px;
-        background-color: #D0FBE8;
-        position: relative;
-        top: -150px;
-        border-radius: 10px 0 20px 20px;
-        left: 30px;
-    
-    }
-    .admission-det img{
-        width: 35px;
-        height: 35px;
-        position: relative;
-        left: 15px;
-        top: 10px;
-    }
-    .admission-det h3{
-        font-size: 10px;
-        font-weight: 900;
-        position: relative;
-        left: 60px;
-        top: -20px;
-        color: #000000;
-    }
-    .admission-det h5{
-        font-size: 10px;
-        font-weight: 300;
-        position: relative;
-        left: 60px;
-        top: -25px;
-    }
-    .mini-des{
-        width: 100px;
-        height: 55px;
-        background-color: #F3CD06;
-        position: relative;
-        left: 210px;
-        top: -75px;
-        border-radius: 10px 10px 20px 20px;
-    }
-    
-    .mini-des h3{
-        color: #000000;
-        font-size: 10px;
-        font-weight: 900;
-        position: relative;
-        text-align: center;
-        left: 3px;
-        top: 10px;
-      
-       
-    }
-    .mini-des span{
-        color: black;
-        font-weight: 400
-    }
-    
-    /*button section css */
-    
-    .big-btn{ 
-            width: 160px;
-            height: 38px;
-            background-color: #0CCC0C;
-            border-radius: 12px;
-            color: white;
-            font-size: 12px;
-            font-weight: bold;
-            border: none;
-            position: relative;
-            bottom: 650px;  
-            left: 550px;
-        }
-        
-        
-    /*footer section css */
-    
-        .footer-section {
-            margin-top: -500px;
-            background-image: url('images/home/footer-background.webp');
-            /* background-position: center; */
-            background-size: cover;
-            padding: 80px 0px 20px 0px;
-            background-color: #07081C;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-        }
-        
-        .footer-section img {
-            height: 48px;
-        }
-        
-        .footer-section p,
-        .footer-section a {
-            color: #fff;
-            text-decoration: none;
-            margin-top: 100px;
-            font-size: 15px;
-        }
-        
-        .footer-section h5 {
-            color: #fff;
-            font-weight: 600;
-            margin-top: 20px;
-        }
-        
-        .footer-section ul {
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        .footer-section ul li {
-            list-style: none;
-            color: #fff;
-            margin: 13px 0px 0px 0px;
-        }
-        
-        .social-media {
-            display: flex;
-            color: #fff;
-        }
-        
-        .round {
-            height: 35px;
-            width: 35px;
-            border-radius: 50%;
-            border: 1px solid #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            margin-top:-60px;
-            color: #fff;
-            font-size: 10px;
-        }
     
         
     @media all and (min-width:1300px){
@@ -1030,7 +532,7 @@ header.sticky ul li a {
     }
     
     :root {
-        --teamColor: #0CCC0C;
+        --teamColor: #3798D4;
         --backgroundColor: #F7F7F7;
         --headingColor: #0E1F51;
     }
@@ -1106,7 +608,7 @@ header.sticky ul li a {
     }
     
     .logo img {
-        height: 40px;
+        height: 55px;
     }
     
     .nav__list {
@@ -1336,7 +838,7 @@ header.sticky ul li a {
     }
     
     .align h3{
-        color: #0CCC0C;
+        color: #3798D4;
         font-size: 15px;
         font-weight: 900;
         position: relative;
@@ -1422,7 +924,7 @@ header.sticky ul li a {
     .big-btn{ 
             width: 160px;
             height: 38px;
-            background-color: #0CCC0C;
+            background-color: #3798D4;
             border-radius: 12px;
             color: white;
             font-size: 12px;
@@ -1442,7 +944,7 @@ header.sticky ul li a {
     /*footer section css */
     
         .footer-section {
-            margin-top: -500px;
+            margin-top: -400px;
             background-image: url('images/home/footer-background.webp');
             /* background-position: center; */
             background-size: cover;
@@ -1455,7 +957,9 @@ header.sticky ul li a {
         }
         
         .footer-section img {
-            height: 40px;
+            height: 55px;
+            position: relative;
+            top: 20px;
         }
         
         .footer-section p,
@@ -1464,6 +968,10 @@ header.sticky ul li a {
             text-decoration: none;
             margin-top: 100px;
             font-size: 15px;
+        }
+        .footer-section p{
+            position: relative;
+            top: 20px;
         }
         
         .footer-section h5 {
@@ -1500,7 +1008,7 @@ header.sticky ul li a {
         .footer-nav {
             display: flex;
             justify-content: center;
-            margin-top:-60px;
+            margin-top:-80px;
             color: #fff;
             font-size: 10px;
            
@@ -1510,7 +1018,7 @@ header.sticky ul li a {
         
     
     
-}
+
 
     
 @media all and (max-width:700px) {
@@ -1639,6 +1147,15 @@ header.sticky ul li a {
         width: 90%;
         text-align: justify;
     }
+
+
+ /* process css */
+    .process-sec{
+
+        width: 100%;
+        padding: 16px;
+
+       }
         /* cards-section css */
         .admission-sections{
             position: relative;
@@ -1649,7 +1166,11 @@ header.sticky ul li a {
            .bacground{
             margin-top: -200px;
            }
-            
+
+ /*details section css */
+
+ 
+      
     .card-body img{
         width: 100%;
         height: 100%;
@@ -1828,7 +1349,7 @@ header.sticky ul li a {
     .footer-nav p {
         text-align: center;
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 10px;
         
     }
     
