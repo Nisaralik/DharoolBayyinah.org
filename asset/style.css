@@ -165,7 +165,10 @@ header.sticky ul li a {
 .carousal-section{
      margin-top: -370px;
 }
-
+.container-fluid img{
+    height: 100%;
+    width: 100%!important;
+}
 
 .container {
     position: relative;
@@ -590,6 +593,10 @@ header.sticky ul li a {
         display: none !important;
     }
 /* banner section css */
+.carousal-section{
+    position: relative;
+    top: -30px;
+}
 .carousel-indicators button{
     margin-bottom: 20px;
 }
@@ -690,7 +697,7 @@ header.sticky ul li a {
     height: 100%;
     margin-top: -30px;
 }
-/* .card-body img{
+.card-body img{
     width: 93%;
     position: relative;
     left: 10px;
@@ -699,14 +706,14 @@ header.sticky ul li a {
 .card-body p{
     width: 93%;
     position: relative;
-    left: 10px;
+    left: 5px;
    
     
 }
 .card-body h3{
     position: relative;
-    left: 10px;
-} */
+    left: 5px;
+}
 /* slider-section css */
 
 .title1 h4{

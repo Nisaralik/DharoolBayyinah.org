@@ -1129,7 +1129,8 @@ header.sticky ul li a {
         align-items: center;
         justify-content: center;
         height: 400px;
-        margin-top: 60px;
+        position: relative;
+        top: -15px;
     }
     
     .banner-section h1 {
