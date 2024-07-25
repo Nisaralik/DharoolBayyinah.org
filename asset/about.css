@@ -1399,6 +1399,7 @@ header.sticky ul li a {
         /* height: 90%; */
         position: relative;
         left: 16px;
+        right: 16px;
     }
     .card-content h4{
         position: relative;
